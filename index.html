@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inscripcion a Curso presencial de verano</h1>
+
+    <p>Este curso esta enfocado en los estudiantes que suspendieron.</p>
+    <p>deberan ingresar sus datos perosnales para la inscripcion.</p>
+    <p>este año tendremos varias disponibilidades, debera escoger una.</p>
+    <br>
+    
+
+
+    <form action="" method="get">
+        <label for="nombre1">Primer nombre:*</label>
+        <input type="text"name = "name1" id = "nombre1" required>
+        <br>
+        <br>
+        <label for="nombre2">Segundo nombre:*</label>
+        <input type="text"name = "name2" id = "nombre2">
+        <br>
+        <br>
+        <label for="apellido1">Primer apellido:*</label>
+        <input type="text"name = "lastName" id = "apellido1" required>
+        <br>
+        <br>
+        <label for="apellido2">Segundo apellido:</label>
+        <input type="text"name = "lastName" id = "apellido2">
+        <br>
+        <br>
+        <label for="tipoDocumento">Tipo de documento:*</label>
+        <select name="documento" id="tipoDocumento" required>
+            <option value="dni">DNI</option>
+            <option value="nie">NIE</option>
+            <option value="pasaporte">PASAPORTE</option>
+        </select>
+        <input type="text"name = "documento" id = "tipoDocumento" required>
+        <br>
+        <br>
+        <label for="fechaNacimeinto">Fecha de Nacimiento:*</label>
+        <input type="date" name="fechaNacimeinto" id="fechaNacimeinto">
+        <br>
+        <br>
+        <label for="telefono">Telefono:</label>
+        <input type="tel" name="telefono" id="telefono" placeholder="+34 000 00 00">
+        <br>
+        <br>
+        <label for="email">Correo electronico:</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <br>
+        <label for="direccion">Direccion:</label>
+        <input type="text" name="direccion" id="direccion">
+        <br>
+        <br>
+        <label for="pais">Pais:</label>
+        <input type="text" name="pais" id="pais">
+        <br>
+        <br>
+        <label for="provincia">Provincia</label>
+        <br>
+        <br>
+        <input type="radio" name="provincia" id="andalucia"><label for="andalucia">Andalucia</label>
+        <br>
+        <input type="radio" name="provincia" id="castillayleon"><label for="castillayleon">Castilla y León</label>
+        <br>
+        <input type="radio" name="provincia" id="galicia"><label for="galicia">Galicia</label>
+        <br>
+        <input type="radio" name="provincia" id="madrid"><label for="madrid">Madrid</label>
+        <br>
+        <input type="radio" name="provincia" id="paisvasco"><label for="paisvasco">País Vasco</label>
+        <br>
+        <br>
+        <label for="codigoPostal">Codigo postal:</label>
+        <input type="number" name="codigoPostal" id="codigoPostal">
+        <br>
+        <br>
+        <label for="nacionalidad">Nacionalidad:</label>
+        <input type="text" name="nacionalidad" id="nacionalidad">
+        <br>
+        <br>
+        <label for="curso">Curso a inscribir:</label>
+        <input type="text" name="curso" id="curso">
+        <br>
+        <br>
+        <label for="nota">Nota:</label>
+        <input type="number" name="nota" id="nota" min="3" max="6">
+        <br>
+        <br>
+        <label for="disponibilidadam">Disponibilidad mañana:</label>
+        <input type="range" name="disponibilidadam" id="disponibilidadam" min="8" max="12">
+        <br>
+        <br>
+        <label for="disponibilidadpm">Disponibilidad tarde:</label>
+        <input type="range" name="disponibilidadpm" id="disponibilidadpm" min="13" max="17">
+        <br>
+        <br>
+        <button>Enviar</button>
+        <input type="button" value="Boton 2">
+        <input type="submit" value="Enviar 2">
+        <input type="reset" value="Reiniciar">
+
+
+    </form>
+
+
+
+</body>
+</html>
