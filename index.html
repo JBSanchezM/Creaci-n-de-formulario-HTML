@@ -1,78 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inscripción Curso Presencial de Verano</title>
+
+<style>
+       
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        h1 {
+            background-color: #007bff; 
+            color: white; 
+            padding: 15px;
+            margin: 0;
+        }
+
+       p {
+            text-align: justify;
+            max-width: 750px;
+            margin: 0 auto 10px auto;
+        }
+        
+
+        
+        input[type="submit"], input[type="reset"] {
+            font-family: Arial, sans-serif;
+            padding: 10px 20px;
+            border: 2px solid;
+            border-radius: 5px; 
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+           
+            
+        }
+
+       .botones {
+          text-align: center;
+           margin-top: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border-color: #0056b3;
+        }
+
+        input[type="reset"] {
+            background-color: #d6d6d6; 
+            color: #333;
+            border-color: #b8b8b8;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #b8b8b8;
+        }
+
+        
+        input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="date"], select, textarea {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        
+        textarea {
+            resize: vertical;
+        }
+
+        
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        
+        form {
+            background-color: white;
+            margin: 20px auto;
+            padding: 90px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 650px;
+            text-align:justify;
+        }
+
+      
+        textarea {
+            width: 100%;
+        }
+
+        footer {
+         margin: 40px auto 0 auto;   
+         padding: 20px;
+         text-align: center;
+         font-size: 14px;
+         color: #666;
+         border-top: 1px solid #ccc;
+         width: 80%;
+         max-width: 6500px;          
+        }
+
+        .intro-bar {
+        background-color: #f8f9fa;
+        padding: 25px 20px;
+        text-align: center;
+        width: 100%;
+        }
+
+        .intro-bar p {
+        max-width: 750px;     
+        margin: 0 auto 10px auto;
+        font-size: 16px;
+        line-height: 1.6;
+        }
+
+        .intro-bar p:last-child {
+        margin-bottom: 0;
+        }
+
+        .intro-bar .aviso {
+        margin-top: 15px;
+        font-size: 14px;
+        color: #555;
+        }
+
+        .intro-bar {
+        background-color: #eaf2ff;
+        }
+
+</style>
+
 </head>
 <body>
-    <h1>Inscripcion a Curso presencial de verano</h1>
+    <h1>Inscripción a Curso Intensivo de Recuperación - Verano</h1>
 
-    <p>Este curso esta enfocado en los estudiantes que suspendieron.</p>
-    <p>deberan ingresar sus datos perosnales para la inscripcion.</p>
-    <p>este año tendremos varias disponibilidades, debera escoger una.</p>
-    <br>
-    
+    <div class="intro-bar">
+    <p>Este curso está enfocado en los estudiantes que necesitan recuperar asignaturas suspendidas.</p>
+    <p>Para inscribirte, por favor completa tus datos personales y selecciona tu disponibilidad y curso.</p>
+    <p>Todo lo que tenga * es obligatorio.</p>
 
+    <p class="aviso">
+        Se manejarán sus datos personales, deberá aceptar el consentimiento de datos para continuar
+    </p>
+    </div>
 
+ 
     <form action="" method="get">
-        <label for="nombre1">Primer nombre:*</label>
+        <input type="checkbox" name="consentimeinto" id="consentimeinto" required>
+        <label for="consentimeinto"> Acepto el consentimiento informado y el tratamiento de mis datos personales *</label>    
+         
+        <br>
+        <br>
+        <br>
+        <label for="nombre1">Primer nombre: *</label>
         <input type="text"name = "name1" id = "nombre1" required>
         <br>
         <br>
-        <label for="nombre2">Segundo nombre:*</label>
+        <label for="nombre2">Segundo nombre:</label>
         <input type="text"name = "name2" id = "nombre2">
         <br>
         <br>
-        <label for="apellido1">Primer apellido:*</label>
-        <input type="text"name = "lastName" id = "apellido1" required>
+        <label for="apellido1">Primer apellido: *</label>
+        <input type="text"name = "lastName1" id = "apellido1" required>
         <br>
         <br>
         <label for="apellido2">Segundo apellido:</label>
-        <input type="text"name = "lastName" id = "apellido2">
+        <input type="text"name = "lastName2" id = "apellido2">
         <br>
         <br>
-        <label for="tipoDocumento">Tipo de documento:*</label>
-        <select name="documento" id="tipoDocumento" required>
+        <label for="tipoDocumento">Tipo de documento: *</label>
+        <select name="tipoDocumento" id="tipoDocumento" required>
+            <option value="">-- Selecciona una opción --</option>
             <option value="dni">DNI</option>
             <option value="nie">NIE</option>
             <option value="pasaporte">PASAPORTE</option>
         </select>
-        <input type="text"name = "documento" id = "tipoDocumento" required>
         <br>
         <br>
-        <label for="fechaNacimeinto">Fecha de Nacimiento:*</label>
+        <label for="numeroDocumento">Número de documento: *</label>
+        <input type="text" name="numeroDocumento"  id="numeroDocumento" placeholder="Introduce tu documento" required minlength="5" maxlength="12">
+        <br>
+        <br>
+        <label for="fechaNacimeinto">Fecha de Nacimiento: *</label>
         <input type="date" name="fechaNacimeinto" id="fechaNacimeinto">
         <br>
         <br>
-        <label for="telefono">Telefono:</label>
-        <input type="tel" name="telefono" id="telefono" placeholder="+34 000 00 00">
+        <label for="telefono">Teléfono: *</label>
+        <input type="tel" name="telefono" id="telefono" placeholder="+34 600123456" required pattern="[0-9+ ]{9,15}">
         <br>
         <br>
-        <label for="email">Correo electronico:</label>
-        <input type="email" name="email" id="email">
+        <label for="email">Correo electronico: *</label>
+        <input type="email" name="email" id="email" placeholder="ejemplo@correo.es" required>
         <br>
         <br>
         <label for="direccion">Direccion:</label>
         <input type="text" name="direccion" id="direccion">
         <br>
         <br>
-        <label for="pais">Pais:</label>
-        <input type="text" name="pais" id="pais">
+        <label for="pais">País:</label>
+        <input type="text" name="pais" id="pais" value="España" readonly>
         <br>
         <br>
         <label for="provincia">Provincia</label>
         <br>
         <br>
-        <input type="radio" name="provincia" id="andalucia"><label for="andalucia">Andalucia</label>
+        <input type="radio" name="provincia" id="andalucia" value="Andalucia" required><label for="andalucia">Andalucía</label>
         <br>
-        <input type="radio" name="provincia" id="castillayleon"><label for="castillayleon">Castilla y León</label>
+        <input type="radio" name="provincia" id="castillayleon" value="Castilla y León"><label for="castillayleon">Castilla y León</label>
         <br>
-        <input type="radio" name="provincia" id="galicia"><label for="galicia">Galicia</label>
+        <input type="radio" name="provincia" id="galicia" value="Galicia"><label for="galicia">Galicia</label>
         <br>
-        <input type="radio" name="provincia" id="madrid"><label for="madrid">Madrid</label>
+        <input type="radio" name="provincia" id="madrid" value="Madrid"><label for="madrid">Madrid</label>
         <br>
-        <input type="radio" name="provincia" id="paisvasco"><label for="paisvasco">País Vasco</label>
+        <input type="radio" name="provincia" id="paisvasco" value="País Vasco"><label for="paisvasco">País Vasco</label>
         <br>
         <br>
         <label for="codigoPostal">Codigo postal:</label>
@@ -83,12 +246,26 @@
         <input type="text" name="nacionalidad" id="nacionalidad">
         <br>
         <br>
-        <label for="curso">Curso a inscribir:</label>
-        <input type="text" name="curso" id="curso">
+        <label for="curso">Curso a inscribir: *</label>
+        <select name="curso" id="curso" required>
+            <option value="">-- Selecciona un curso --</option>
+            <option value="lm">Lenguajes de Marca</option>
+            <option value="sis">Sistemas informaticos</option>
+            <option value="bd">Bases de datos</option>
+            <option value="pro">Programacion</option>
+            <option value="ed">Entornos de desarrollo</option>
+            <option value="ipe">Itinerario personal para la empleabilidad</option>
+            <option value="amp">Ampliacion IPE</option>
+        </select>
         <br>
         <br>
         <label for="nota">Nota:</label>
         <input type="number" name="nota" id="nota" min="3" max="6">
+        <br>
+        <br>
+        <label for="observaciones">Observaciones / Comentarios: *</label>
+        <br>
+        <textarea id="observaciones" name="observaciones" rows="4" cols="50" placeholder="Si tienes alguna necesidad especial o comentario sobre tu disponibilidad, escríbelo aquí (máx. 300 caracteres)" maxlength="300" required></textarea>
         <br>
         <br>
         <label for="disponibilidadam">Disponibilidad mañana:</label>
@@ -99,15 +276,19 @@
         <input type="range" name="disponibilidadpm" id="disponibilidadpm" min="13" max="17">
         <br>
         <br>
-        <button>Enviar</button>
-        <input type="button" value="Boton 2">
-        <input type="submit" value="Enviar 2">
-        <input type="reset" value="Reiniciar">
-
+       
+        <div class="botones">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar formulario">
+        </div>
 
     </form>
 
-
-
+    <footer>
+    <p>
+        © 2025 Centro de Formación Davante - MEDAC.  Todos los derechos reservados.
+    </p>
+    </footer>
+    
 </body>
 </html>
